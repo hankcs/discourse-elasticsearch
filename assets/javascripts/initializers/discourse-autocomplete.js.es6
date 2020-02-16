@@ -298,7 +298,7 @@ export default {
         $('.Typeahead-spinner').hide();
     }).on({
         'typeahead:render': function (event, datum) {
-          console.log(Array.prototype.slice.call(arguments, 1)[0]);
+          // console.log(Array.prototype.slice.call(arguments, 1)[0]);
 
           if (datum.length > 0 && Array.prototype.slice.call(arguments, 1)[2] == 'emp') {
             $('.tt-dataset-users-tags').delay(500).queue(function (next) {
