@@ -216,9 +216,9 @@ module DiscourseElasticsearch
                             body: {
                               mappings: {
                                 properties: {
-                                  name: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" },
-                                  url: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" },
-                                  username: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" }
+                                  name: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" },
+                                  url: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" },
+                                  username: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" }
                                   }
                               }
                             }
@@ -229,10 +229,10 @@ module DiscourseElasticsearch
                                 properties: {
                                   topic: {
                                     properties: {
-                                      title: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" }
+                                      title: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" }
                                     }
                                   },
-                                  content: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" }
+                                  content: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" }
                                 }
                               }
                             }
@@ -241,8 +241,8 @@ module DiscourseElasticsearch
                             body: {
                               mappings: {
                                 properties: {
-                                  name: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" },
-                                  url: { type: 'text', analyzer: 'ik_max_word', search_analyzer: "ik_smart" }
+                                  name: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" },
+                                  url: { type: 'text', analyzer: 'hanlp_index', search_analyzer: "hanlp_standard" }
                                 }
                               }
                             }

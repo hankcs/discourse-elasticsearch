@@ -2,7 +2,7 @@
 # about:
 # version: 0.2
 # authors: imMMX
-# url: https://github.com/imMMX
+# url: https://github.com/hankcs/discourse-elasticsearch
 
 
 gem 'json', '2.2.0'

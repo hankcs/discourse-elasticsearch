@@ -16,7 +16,7 @@ hooks:
         cd: $home/plugins
         cmd:
           - mkdir -p plugins
-          - git clone https://github.com/imMMX/discourse-elasticsearch.git
+          - git clone https://github.com/hankcs/discourse-elasticsearch.git
 ```
           
 
@@ -39,7 +39,7 @@ Install elk chinese plugin:
 
 ```
 docker exec -it elk bash
-./bin/elasticsearch-plugin install -b https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.2.0/elasticsearch-analysis-ik-7.2.0.zip
+./bin/elasticsearch-plugin install -b https://github.com/KennFalcon/elasticsearch-analysis-hanlp/releases/download/v7.5.1/elasticsearch-analysis-hanlp-7.5.1.zip
 ```
 
 ## Configuration
